@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.springboot.app.itemproducto.models.Producto;
 
-@FeignClient(name="servicio-productos", url="localhost:8001/servicio/producto")
+@FeignClient(name="servicio-productos")
 public interface IProductoClienteRest {
 	
 	@GetMapping("/listar")
